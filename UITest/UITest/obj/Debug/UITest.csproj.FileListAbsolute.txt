@@ -1,0 +1,16 @@
+c:\users\k\documents\visual studio 2015\Projects\UITest\UITest\bin\Debug\UITest.exe.config
+c:\users\k\documents\visual studio 2015\Projects\UITest\UITest\bin\Debug\UITest.exe
+c:\users\k\documents\visual studio 2015\Projects\UITest\UITest\bin\Debug\UITest.pdb
+c:\users\k\documents\visual studio 2015\Projects\UITest\UITest\obj\Debug\MainWindow.g.cs
+c:\users\k\documents\visual studio 2015\Projects\UITest\UITest\obj\Debug\App.g.cs
+c:\users\k\documents\visual studio 2015\Projects\UITest\UITest\obj\Debug\UITest_MarkupCompile.cache
+c:\users\k\documents\visual studio 2015\Projects\UITest\UITest\obj\Debug\UITest_MarkupCompile.lref
+c:\users\k\documents\visual studio 2015\Projects\UITest\UITest\obj\Debug\MainWindow.baml
+c:\users\k\documents\visual studio 2015\Projects\UITest\UITest\obj\Debug\UITest.g.resources
+c:\users\k\documents\visual studio 2015\Projects\UITest\UITest\obj\Debug\UITest.Properties.Resources.resources
+c:\users\k\documents\visual studio 2015\Projects\UITest\UITest\obj\Debug\UITest.csproj.GenerateResource.Cache
+c:\users\k\documents\visual studio 2015\Projects\UITest\UITest\obj\Debug\UITest.exe
+c:\users\k\documents\visual studio 2015\Projects\UITest\UITest\obj\Debug\UITest.pdb
+C:\Users\K\documents\visual studio 2015\Projects\UITest\UITest\obj\Debug\ChildWindow.g.cs
+C:\Users\K\documents\visual studio 2015\Projects\UITest\UITest\obj\Debug\ChildWindow.baml
+C:\Users\K\documents\visual studio 2015\Projects\UITest\UITest\obj\Debug\UITest.csprojResolveAssemblyReference.cache

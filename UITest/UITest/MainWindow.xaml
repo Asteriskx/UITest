@@ -1,0 +1,50 @@
+﻿<Window x:Class="UITest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UITest"
+        mc:Ignorable="d"
+        Title="UI Test" Height="450" Width="900" Background="DimGray">
+    <Grid>
+        <Border x:Name="NowStatus" BorderBrush="#FF168DC5" BorderThickness="0" HorizontalAlignment="Left" Height="32
+                " Margin="0,389,0,0" VerticalAlignment="Top" Width="892" Background="#FF189981"/>
+        <Label x:Name="label" Content="準備完了" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9,386,0,0" Width="277" Foreground="White" FontSize="12" Height="33"/>
+        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Top" Width="168" Margin="56,331,0,0" Foreground="#FF00FFDC" BorderBrush="#FF00FFDC" Background="#FF343232" Height="40" MouseEnter="StartButton_MouseEnter" MouseLeave="StartButton_MouseLeave" Click="StartButton_Click" Template="{DynamicResource Start}">
+            <Button.Resources>
+                <ControlTemplate x:Key="Start" TargetType="{x:Type Button}">
+                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="True">
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="#FF343232"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#FF0EFFFF"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="#FF5A7878"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#FFF3FF00"/>
+
+                        </Trigger>
+                        <Trigger Property="ToggleButton.IsChecked" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="#FFBCDDEE"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#FF245A83"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="border" Value="#FFF4F4F4"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#FFADB2B5"/>
+                            <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="#FF838383"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="EndButton" Content="End" HorizontalAlignment="Left" Margin="687,331,0,0" VerticalAlignment="Top" Width="142" Height="40" BorderBrush="#FF00FFDC" Background="#FF343232" Foreground="#FF00FFDC" BorderThickness="2" MouseEnter="EndButton_MouseEnter" MouseLeave="EndButton_MouseLeave" Click="EndButton_Click"/>
+        <Button x:Name="WindowButton" Content="new Window" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" Margin="374,331,0,0" Height="40" BorderThickness="4" Background="#FF343232" BorderBrush="#FF0EFFFF" Foreground="#FF0EFFFF" Click="WindowButton_Click"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="311" Margin="10,15,0,0" VerticalAlignment="Top" Width="445"/>
+        
+    </Grid>
+</Window>
